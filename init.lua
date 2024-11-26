@@ -880,5 +880,11 @@ require('lazy').setup({
   },
 })
 
--- The line beneath this is called `modeline`. See `:help modeline`
--- vim: ts=2 sts=2 sw=2 et
+vim.api.nvim_create_autocmd('VimEnter', {
+  pattern = '*',
+  callback = function()
+    if vim.fn.argc() == 0 then
+      vim.cmd 'Ex'
+    end
+  end,
+})
