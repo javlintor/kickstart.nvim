@@ -33,3 +33,4 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 
 vim.keymap.set('n', '<leader>pv', vim.cmd.Ex)
 vim.keymap.set('n', '<leader>nt', '<cmd>Neotree toggle<CR>')
+vim.keymap.set('n', '<leader>e', '<cmd>Neotree focus<CR>')
